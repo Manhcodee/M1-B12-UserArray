@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    //bai2
+    let inputNumber = prompt('nhap so');
+    let str = inputNumber.toString();
+    let result = [];
+    for (let i = 0; i < str.length; i++) {
+        result.push(str[i]);
+        if (i > 0 &&  Number([i - 1]) % 2 === 0 && Number(str[i]) % 2 === 0) {
+            result.push('-');
+        }
+    }
+    document.write(result.join(''));
+</script>
+</body>
+</html>

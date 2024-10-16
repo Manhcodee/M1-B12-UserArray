@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+  let inputText = prompt('nhap vao');
+  let str = inputText.split('');
+  let result = [];
+  const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+
+  for (let i = 0; i < str.length; i++) {
+    if(UPPER.indexOf(str[i]) !== -1) {
+      result.push(str[i].toLowerCase());
+    }else if(LOWER.indexOf(str[i]) !== -1) {
+      result.push(str[i].toUpperCase());
+    } else {
+      result.push(str[i]);
+    }
+  }
+  document.write(result.join(''));
+</script>
+</body>
+</html>
